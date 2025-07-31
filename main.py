@@ -318,9 +318,13 @@ class MainWindow(QMainWindow):
 
         # === Boutons ===
         btn_load = QPushButton("Charger image")
+        btn_load.clicked.connect(self.load_image)
         btn_save_project = QPushButton("Sauver projet")
+        btn_save_project.clicked.connect(self.save_project)
         btn_load_project = QPushButton("Charger projet")
+        btn_load_project.clicked.connect(self.load_project)
         btn_export_csv = QPushButton("Exporter CSV")
+        btn_export_csv.clicked.connect(self.export_csv)
 
         btn_measure_mode = QPushButton("Mode Mesure")
         btn_measure_mode.setCheckable(True)
