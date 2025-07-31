@@ -347,7 +347,7 @@ class MainWindow(QMainWindow):
         btn_complex_surface.clicked.connect(self.toggle_complex_surface_mode)
 
         btn_help = QPushButton("Aide / Guide utilisateur")
-        btn_help.clicked.connect(self.afficher_aide)
+        btn_help.clicked.connect(lambda: afficher_aide(self))
 
         # === Groupes de boutons ===
 
