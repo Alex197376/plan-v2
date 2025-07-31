@@ -32,3 +32,4 @@ Permet de calculer la surface d’un polygone libre.<br>
 • Réinitialiser échelle : supprime toutes les références<br>
     """
     QMessageBox.information(parent, "Aide - Mode d'emploi", message)
+
