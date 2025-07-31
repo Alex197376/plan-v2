@@ -4,16 +4,31 @@ import json
 import csv
 import os
 from PyQt6.QtWidgets import (
-    QApplication, QMainWindow, QFileDialog, QLabel, QPushButton, QVBoxLayout,
-    QWidget, QGraphicsView, QGraphicsScene, QGraphicsPixmapItem, QGraphicsTextItem,
-    QListWidget, QMessageBox, QSplitter, QTextEdit, QInputDialog
+    QApplication,
+    QMainWindow,
+    QFileDialog,
+    QLabel,
+    QPushButton,
+    QVBoxLayout,
+    QWidget,
+    QGraphicsView,
+    QGraphicsScene,
+    QGraphicsPixmapItem,
+    QGraphicsTextItem,
+    QListWidget,
+    QMessageBox,
+    QSplitter,
+    QTextEdit,
+    QInputDialog,
+    QGroupBox,
+    QSpacerItem,
+    QSizePolicy,
 )
 from PyQt6.QtGui import QPixmap, QPen, QColor, QWheelEvent, QPainter, QCursor, QKeyEvent
 from PyQt6.QtCore import Qt, QPointF, QRectF
 import numpy as np
 from PyQt6.QtGui import QPolygonF
 from aide import afficher_aide
-from PyQt5.QtWidgets import QGroupBox, QVBoxLayout, QSpacerItem, QSizePolicy
 
 
 CONFIG_PATH = os.path.join(os.path.expanduser("~"), ".mesure_plan_config.json")
